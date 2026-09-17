@@ -41,7 +41,28 @@ Sample Test Cases:
 """
 
 # Write your solution for Question 1 below:
+user_input = eval(input("Enter your total bill amount: " ))
+if user_input<=0 :
+    disc_per = 0
+    print("Invalid bill amount")
+elif user_input>=5000:
+    disc_per = 20
+    print("You are getting 20% discount")
+elif user_input>=3000 and user_input<=4999 :
+    disc_per = 15
+    print("You are getting 15% discount")
+elif user_input>=1000 and user_input<=2999 :
+    disc_per = 10
+    print("You are getting 10% discount")
+else :
+    print("you are not getting any discounts")
 
+discount_amt = (user_input*(disc_per/100))
+final_amt = user_input - discount_amt
+
+print (user_input)
+print (discount_amt)
+print (final_amt)
 
 
 
